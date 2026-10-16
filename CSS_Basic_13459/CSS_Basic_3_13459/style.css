@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(238, 245, 253);
+    min-height: 100vh;
+    margin: 0;
+}
+
+#informasi {
+    box-shadow: 0 0.5px 1px rgb(165, 165, 165);
+    background-color: rgba(9, 79, 158, 0.4);
+    padding: 10px 30px 5px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    color: rgb(254, 254, 254);
+    text-align: center;
+}
+
+#informasi h1 {
+    text-align: center;
+    background-color: rgb(57, 115, 181);
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: -20px;
+    padding: 20px o;
+    color: white;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 25px auto 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(43, 96, 212);
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    transition: all 0.2s linear;
+}
+
+.link a{
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+
+.link:hover {
+    background-color: rgb(3, 66, 137, 0.7);
+    a {
+        color: white;
+    }
+    transform: scale(1.05);
+}
