@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Pendaftaran Kompetisi Nasional</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h2>Registrasi Peserta Lomba</h2>
+            <p>Tunjukkan bakatmu dan daftarkan tim terbaikmu sekarang!</p>
+        </div>
+
+        <form action="#" method="post" class="card-body">
+            <div class="field">
+                <label for="nama_tim">Nama Tim / Peserta</label>
+                <input type="text" id="nama_tim" name="nama_tim" placeholder="Masukkan nama tim" required="required" />
+            </div>
+
+            <div class="field">
+                <label for="ketua">Nama Ketua Tim</label>
+                <input type="text" id="ketua" name="ketua" placeholder="Nama lengkap ketua" required="required" />
+            </div>
+
+            <div class="field">
+                <label for="kontak">Nomor Kontak Ketua</label>
+                <input type="tel" id="kontak" name="kontak" placeholder="08XXXXXXXXXX" required="required" />
+            </div>
+
+            <div class="field">
+                <label for="cabang_lomba">Kategori Lomba</label>
+                <select id="cabang_lomba" name="cabang_lomba">
+                    <option value="web">Pengembangan Aplikasi Web</option>
+                    <option value="uiux">Desain UI/UX</option>
+                    <option value="cp">Competitive Programming</option>
+                    <option value="ctf">Cyber Security / CTF</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Anggota Tambahan</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="fasilitas[]" value="kaos" /> Sertifikat Cetak</label>
+                    <label><input type="checkbox" name="fasilitas[]" value="snack" /> Konsumsi Saat Final</label>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="berkas">Tautan Berkas Persyaratan (Google Drive)</label>
+                <input type="text" id="berkas" name="berkas" placeholder="https://drive.google.com/..." required="required" />
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Pendaftaran</button>
+        </form>
+    </div>
+</body>
+</html>

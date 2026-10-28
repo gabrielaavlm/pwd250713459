@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Pendaftaran Seminar Teknologi</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Formulir Registrasi Seminar Nasional</h2>
+        <p class="subtitle">Silakan isi data diri Anda dengan benar untuk mendaftar acara ini.</p>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" placeholder="contoh@email.com" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="telepon">Nomor WhatsApp/HP</label>
+                <input type="tel" id="telepon" name="telepon" placeholder="08XXXXXXXXXX" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="instansi">Instansi / Universitas</label>
+                <input type="text" id="instansi" name="instansi" placeholder="Nama instansi atau kampus" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="kategori">Kategori Peserta</label>
+                <select id="kategori" name="kategori">
+                    <option value="mahasiswa">Mahasiswa</option>
+                    <option value="dosen">Dosen / Peneliti</option>
+                    <option value="umum">Masyarakat Umum</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Sesi Seminar yang Diikuti</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="sesi" value="pagi" checked="checked" /> Sesi Pagi (09.00 - 12.00 WIB)</label>
+                    <label><input type="radio" name="sesi" value="siang" /> Sesi Siang (13.00 - 16.00 WIB)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="catatan">Pertanyaan / Catatan Khusus</label>
+                <textarea id="catatan" name="catatan" rows="4" placeholder="Tuliskan jika ada hal yang ingin ditanyakan"></textarea>
+            </div>
+
+            <button type="submit">Kirim Pendaftaran</button>
+        </form>
+    </div>
+</body>
+</html>
