@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <title>Form Peminjaman Buku (XHTML)</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+        function fn_ValForm() {
+            var sMsg = "";
+            if (document.getElementById("nama").value == "") {
+                sMsg += "\n* Anda belum mengisikan nama";
+            }
+            if (document.getElementById("judul").value == "") {
+                sMsg += "\n* Anda belum mengisikan judul buku";
+            }
+            if (document.getElementById("keperluan").value == "") {
+                sMsg += "\n* Anda belum mengisikan keperluan";
+            }
+
+            if (sMsg != "") {
+                alert("Peringatan:\n" + sMsg);
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Form Peminjaman Buku</h1>
+    <form action="" method="post" onsubmit="return fn_ValForm();">
+        <p>Nama Peminjam:<br /><input type="text" id="nama" name="nama" /></p>
+        <p>Judul Buku:<br /><input type="text" id="judul" name="judul" /></p>
+        <p>Keperluan Meminjam:<br /><textarea id="keperluan" name="keperluan" rows="4" cols="30"></textarea></p>
+        <p><input type="submit" value="Send" /></p>
+    </form>
+</body>
+</html>
